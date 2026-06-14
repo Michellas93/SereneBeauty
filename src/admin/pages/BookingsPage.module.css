@@ -1,0 +1,338 @@
+.page {
+  max-width: 1200px;
+}
+
+.topBar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 24px;
+}
+
+.title {
+  font-size: 24px;
+  font-weight: 700;
+  color: #0a0a0a;
+}
+
+.addBtn {
+  padding: 9px 18px;
+  border-radius: 8px;
+  background: #0a0a0a;
+  color: #fff;
+  border: none;
+  font-size: 14px;
+  font-weight: 600;
+  font-family: inherit;
+  cursor: pointer;
+}
+
+.addBtn:hover { opacity: 0.85; }
+
+.filters {
+  display: flex;
+  gap: 10px;
+  margin-bottom: 16px;
+  flex-wrap: wrap;
+}
+
+.searchWrap {
+  position: relative;
+  flex: 1;
+  min-width: 200px;
+}
+
+.searchIcon {
+  position: absolute;
+  left: 12px;
+  top: 50%;
+  transform: translateY(-50%);
+  color: #a3a3a3;
+  pointer-events: none;
+}
+
+.search {
+  width: 100%;
+  padding: 9px 12px 9px 36px;
+  border: 1.5px solid #e5e5e5;
+  border-radius: 8px;
+  font-size: 14px;
+  font-family: inherit;
+  color: #0a0a0a;
+  outline: none;
+  background: #fff;
+}
+
+.search:focus { border-color: #0a0a0a; }
+
+.selectWrap {
+  position: relative;
+  display: flex;
+  align-items: center;
+}
+
+.selectArrow {
+  position: absolute;
+  right: 12px;
+  pointer-events: none;
+  flex-shrink: 0;
+}
+
+.select {
+  padding: 9px 32px 9px 12px;
+  border: 1.5px solid #e5e5e5;
+  border-radius: 8px;
+  font-size: 14px;
+  font-family: inherit;
+  color: #0a0a0a;
+  background: #fff;
+  outline: none;
+  cursor: pointer;
+  -webkit-appearance: none;
+  appearance: none;
+  height: 38px;
+  box-sizing: border-box;
+}
+
+.search,
+.select {
+  transition: border-color 0.15s;
+}
+
+.search:focus,
+.select:focus { border-color: #0a0a0a; }
+
+.sortBtn {
+  padding: 9px 14px;
+  border-radius: 8px;
+  background: #fff;
+  border: 1.5px solid #e5e5e5;
+  font-size: 13px;
+  font-weight: 600;
+  font-family: inherit;
+  color: #525252;
+  cursor: pointer;
+  height: 38px;
+  box-sizing: border-box;
+}
+
+.sortBtn:hover { background: #f5f5f5; }
+
+.tableWrap {
+  background: #fff;
+  border-radius: 12px;
+  border: 1px solid #e5e5e5;
+  overflow-x: auto;
+  -webkit-overflow-scrolling: touch;
+}
+
+.table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.table th {
+  text-align: left;
+  padding: 12px 16px;
+  font-size: 11px;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  color: #a3a3a3;
+  background: #fafafa;
+  border-bottom: 1px solid #e5e5e5;
+  white-space: nowrap;
+}
+
+.table td {
+  padding: 12px 16px;
+  border-bottom: 1px solid #f5f5f5;
+  vertical-align: middle;
+}
+
+.table tr:last-child td { border-bottom: none; }
+
+.table tr:hover td { background: #fafafa; }
+
+.rowCancelled td { opacity: 0.55; }
+
+.clientName {
+  font-size: 14px;
+  font-weight: 700;
+  color: #0a0a0a;
+}
+
+.clientSub {
+  font-size: 12px;
+  color: #a3a3a3;
+  margin-top: 1px;
+}
+
+.dateVal {
+  font-size: 14px;
+  font-weight: 600;
+  color: #0a0a0a;
+}
+
+.timeVal {
+  font-size: 12px;
+  color: #a3a3a3;
+  margin-top: 1px;
+}
+
+.stylistCell {
+  font-size: 14px;
+  color: #525252;
+}
+
+.serviceCell {
+  font-size: 13px;
+  color: #525252;
+  max-width: 180px;
+}
+
+.priceCell {
+  font-size: 14px;
+  font-weight: 700;
+  color: #0a0a0a;
+  white-space: nowrap;
+}
+
+.badge {
+  display: inline-block;
+  padding: 3px 10px;
+  border-radius: 20px;
+  font-size: 11px;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  white-space: nowrap;
+}
+
+.confirmed { background: #eff6ff; color: #1d4ed8; }
+.completed { background: #f0fdf4; color: #166534; }
+.cancelled { background: #f5f5f5; color: #a3a3a3; }
+.noShow { background: #fff7ed; color: #c2410c; }
+
+.actions {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+}
+
+.actionComplete, .actionCancel, .actionNoShow, .actionEdit, .actionDelete {
+  width: 30px;
+  height: 30px;
+  border-radius: 6px;
+  border: none;
+  font-size: 13px;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: inherit;
+  font-weight: 700;
+  transition: background 0.15s;
+}
+
+.actionComplete { background: #f0fdf4; color: #166534; }
+.actionComplete:hover { background: #dcfce7; }
+
+.actionNoShow { background: #fefce8; color: #a16207; }
+.actionNoShow:hover { background: #fef08a; }
+
+.actionCancel { background: #fef2f2; color: #991b1b; }
+.actionCancel:hover { background: #fecaca; }
+
+.actionEdit { background: #f5f5f5; color: #525252; }
+.actionEdit:hover { background: #e5e5e5; }
+
+.actionDelete { background: #f5f5f5; color: #a3a3a3; }
+.actionDelete:hover { background: #fef2f2; color: #ef4444; }
+
+.empty {
+  text-align: center;
+  padding: 48px;
+  color: #a3a3a3;
+  font-size: 14px;
+}
+
+.count {
+  margin-top: 10px;
+  font-size: 13px;
+  color: #a3a3a3;
+  text-align: right;
+}
+
+/* Confirm delete dialog */
+.confirmOverlay {
+  position: fixed;
+  inset: 0;
+  background: rgba(0,0,0,0.4);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 200;
+}
+
+.confirmBox {
+  background: #fff;
+  border-radius: 12px;
+  padding: 28px;
+  max-width: 320px;
+  width: 100%;
+  box-shadow: 0 20px 60px rgba(0,0,0,0.15);
+}
+
+.confirmBox h3 {
+  font-size: 17px;
+  font-weight: 700;
+  color: #0a0a0a;
+  margin-bottom: 8px;
+}
+
+.confirmBox p {
+  font-size: 14px;
+  color: #737373;
+  margin-bottom: 20px;
+}
+
+.confirmActions {
+  display: flex;
+  gap: 10px;
+  justify-content: flex-end;
+}
+
+.confirmCancel {
+  padding: 9px 16px;
+  border-radius: 8px;
+  background: #f5f5f5;
+  color: #525252;
+  border: none;
+  font-size: 14px;
+  font-weight: 600;
+  font-family: inherit;
+  cursor: pointer;
+}
+
+.confirmDelete {
+  padding: 9px 16px;
+  border-radius: 8px;
+  background: #ef4444;
+  color: #fff;
+  border: none;
+  font-size: 14px;
+  font-weight: 600;
+  font-family: inherit;
+  cursor: pointer;
+}
+
+@media (max-width: 1280px) {
+  .title { font-size: 20px; }
+  .table th, .table td { padding: 10px 12px; font-size: 13px; }
+}
+
+@media (max-width: 900px) {
+  .topBar { flex-wrap: wrap; gap: 8px; }
+  .serviceCell, .stylistCell { max-width: 120px; white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
+}

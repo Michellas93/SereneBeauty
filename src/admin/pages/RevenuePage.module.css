@@ -1,0 +1,226 @@
+.page {
+  max-width: 1100px;
+}
+
+.title {
+  font-size: 24px;
+  font-weight: 700;
+  color: #0a0a0a;
+  margin-bottom: 24px;
+}
+
+.kpiRow {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 16px;
+  margin-bottom: 24px;
+}
+
+.kpi {
+  background: #fff;
+  border-radius: 12px;
+  border: 1px solid #e5e5e5;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+
+.kpiLabel {
+  font-size: 12px;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.06em;
+  color: #a3a3a3;
+}
+
+.kpiValue {
+  font-size: 28px;
+  font-weight: 800;
+  color: #0a0a0a;
+  letter-spacing: -0.02em;
+  line-height: 1.1;
+}
+
+.kpiChange {
+  font-size: 12px;
+  font-weight: 600;
+}
+
+.kpiUp { color: #16a34a; }
+.kpiDown { color: #dc2626; }
+
+.kpiSub {
+  font-size: 12px;
+  color: #a3a3a3;
+}
+
+.chartsRow {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 16px;
+  margin-bottom: 16px;
+}
+
+.chartCard {
+  background: #fff;
+  border-radius: 12px;
+  border: 1px solid #e5e5e5;
+  padding: 24px;
+}
+
+.chartTitle {
+  font-size: 14px;
+  font-weight: 700;
+  color: #0a0a0a;
+  margin-bottom: 20px;
+}
+
+/* Vertical bar chart */
+.barChart {
+  display: flex;
+  align-items: flex-end;
+  justify-content: space-around;
+  height: 160px;
+  gap: 16px;
+}
+
+.barGroup {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 6px;
+  flex: 1;
+}
+
+.barTrack {
+  width: 100%;
+  height: 120px;
+  display: flex;
+  align-items: flex-end;
+  justify-content: center;
+}
+
+.bar {
+  width: 100%;
+  background: #0a0a0a;
+  border-radius: 6px 6px 0 0;
+  min-height: 4px;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  transition: background 0.15s;
+}
+
+.barVal {
+  position: absolute;
+  top: -22px;
+  font-size: 11px;
+  font-weight: 700;
+  color: #0a0a0a;
+  white-space: nowrap;
+}
+
+.barLabel {
+  font-size: 12px;
+  font-weight: 700;
+  color: #525252;
+}
+
+.barCount {
+  font-size: 11px;
+  color: #a3a3a3;
+}
+
+/* Horizontal bar chart */
+.hBars {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.hBar {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.hBarLabel {
+  font-size: 13px;
+  font-weight: 600;
+  color: #525252;
+  width: 80px;
+  flex-shrink: 0;
+}
+
+.hBarTrack {
+  flex: 1;
+  height: 8px;
+  background: #f5f5f5;
+  border-radius: 4px;
+  overflow: hidden;
+}
+
+.hBarFill {
+  height: 100%;
+  background: #0a0a0a;
+  border-radius: 4px;
+  min-width: 2px;
+  transition: width 0.3s ease;
+}
+
+.hBarVal {
+  font-size: 12px;
+  font-weight: 700;
+  color: #0a0a0a;
+  width: 80px;
+  text-align: right;
+  flex-shrink: 0;
+}
+
+/* Recent list */
+.recentList {
+  display: flex;
+  flex-direction: column;
+  gap: 1px;
+}
+
+.recentItem {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 10px 0;
+  border-bottom: 1px solid #f5f5f5;
+}
+
+.recentItem:last-child {
+  border-bottom: none;
+}
+
+.recentClient {
+  font-size: 14px;
+  font-weight: 700;
+  color: #0a0a0a;
+}
+
+.recentDetail {
+  font-size: 12px;
+  color: #a3a3a3;
+  margin-top: 2px;
+}
+
+.recentRight {
+  text-align: right;
+}
+
+.recentPrice {
+  font-size: 14px;
+  font-weight: 700;
+  color: #0a0a0a;
+}
+
+.recentDate {
+  font-size: 12px;
+  color: #a3a3a3;
+  margin-top: 2px;
+}

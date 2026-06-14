@@ -1,0 +1,179 @@
+.shell {
+  display: flex;
+  min-height: 100vh;
+  background: #f5f5f5;
+}
+
+.sidebar {
+  width: 220px;
+  min-height: 100vh;
+  background: #0a0a0a;
+  display: flex;
+  flex-direction: column;
+  padding: 28px 0 24px;
+  position: fixed;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  z-index: 10;
+}
+
+.brand {
+  padding: 0 24px 32px;
+  border-bottom: 1px solid #262626;
+}
+
+.brandName {
+  display: block;
+  font-size: 18px;
+  font-weight: 700;
+  letter-spacing: 0.08em;
+  color: #fff;
+}
+
+.brandSub {
+  font-size: 11px;
+  font-weight: 500;
+  letter-spacing: 0.15em;
+  text-transform: uppercase;
+  color: #737373;
+}
+
+.nav {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+  padding: 20px 12px;
+}
+
+.navItem {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  padding: 10px 12px;
+  border-radius: 8px;
+  color: #a3a3a3;
+  font-size: 14px;
+  font-weight: 500;
+  transition: background 0.15s, color 0.15s;
+  text-decoration: none;
+}
+
+.navItem:hover {
+  background: #171717;
+  color: #fff;
+}
+
+.navItem.active {
+  background: #262626;
+  color: #fff;
+}
+
+.userInfo {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin: 0 12px 4px;
+  padding: 10px 12px;
+  border-top: 1px solid #262626;
+}
+
+.userAvatar {
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  background: #262626;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+  color: #a3a3a3;
+}
+
+.userDetails {
+  display: flex;
+  flex-direction: column;
+  gap: 1px;
+  min-width: 0;
+}
+
+.userRole {
+  font-size: 12px;
+  font-weight: 600;
+  color: #e5e5e5;
+}
+
+.userEmail {
+  font-size: 11px;
+  color: #737373;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.backBtn {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin: 0 12px 4px;
+  padding: 10px 12px;
+  border-radius: 8px;
+  color: #737373;
+  font-size: 14px;
+  font-weight: 500;
+  transition: background 0.15s, color 0.15s;
+}
+
+.backBtn:hover {
+  background: #171717;
+  color: #d4d4d4;
+}
+
+.logoutBtn {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin: 0 12px;
+  padding: 10px 12px;
+  border-radius: 8px;
+  color: #737373;
+  font-size: 14px;
+  font-weight: 500;
+  cursor: pointer;
+  background: none;
+  border: none;
+  font-family: inherit;
+  transition: background 0.15s, color 0.15s;
+}
+
+.logoutBtn:hover {
+  background: #171717;
+  color: #ef4444;
+}
+
+.main {
+  flex: 1;
+  margin-left: 220px;
+  min-height: 100vh;
+  padding: 32px;
+}
+
+@media (max-width: 1280px) {
+  .sidebar { width: 180px; }
+  .brand { padding: 0 16px 24px; }
+  .brandName { font-size: 15px; }
+  .nav { padding: 16px 8px; }
+  .navItem { gap: 8px; padding: 9px 10px; font-size: 13px; }
+  .backBtn { gap: 8px; padding: 9px 10px; font-size: 13px; }
+  .logoutBtn { gap: 8px; padding: 9px 10px; font-size: 13px; }
+  .userInfo { margin: 0 8px 4px; padding: 10px; }
+  .userRole { font-size: 11px; }
+  .userEmail { font-size: 10px; }
+  .main { margin-left: 180px; padding: 20px; }
+}
+
+@media (max-width: 768px) {
+  .sidebar { width: 160px; }
+  .main { margin-left: 160px; padding: 16px; }
+}
